@@ -62,6 +62,6 @@ wss.on("connection", (ws: WebSocket) => {
 	});
 });
 
-server.listen(8080, () => {
-	console.log("listening on port 8080");
+server.listen(24454, () => {
+	console.log("listening on port 24454");
 });

@@ -33,6 +33,7 @@ export class Game {
 		if (column < 0 || column >= this.width) {
 			throw new Error("Invalid column");
 		}
+		this.turn = this.turn === Piece.RED ? Piece.YELLOW : Piece.RED;
 		for (let i = 0; i < this.height; i++) {
 			if (this.state[column][i] === Piece.NONE) {
 				this.state[column][i] = color;
